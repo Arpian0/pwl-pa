@@ -5,7 +5,7 @@
     <div class="container">
         <h1 class="jumbotron-heading">Gallery Amikom</h1>
         <p class="lead text-heading">
-            Barang Kamu Hilang di Amikom.
+            Barang Kamu Ketinggalan di Amikom.
         </p>
         <p>
             <a href="<?php echo base_url('image/create'); ?>" class="btn btn-primary btn-sm my-2">

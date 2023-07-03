@@ -29,7 +29,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'ImageController::index');
+$routes->get('image', 'ImageController::index');
 $routes->group('image', function ($routes) {
     $routes->get('/', 'ImageController::index');
     $routes->get('create', 'ImageController::create'); //tambahkan kode ini
@@ -40,7 +40,7 @@ $routes->get('image/show/(:num)', 'ImageController::show/$1');
 
 $routes->get('register', 'Auth::register');
 $routes->post('register', 'Auth::register');
-$routes->get('login', 'Auth::login');
+$routes->get('/', 'Auth::login');
 $routes->post('login', 'Auth::login');
 $routes->get('logout', 'Auth::logout');
 /*

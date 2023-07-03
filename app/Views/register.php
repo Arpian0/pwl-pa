@@ -94,5 +94,5 @@
         <input type="password" name="confirm_password" id="confirm_password" class="form-control" required>
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
-    <p>Sudah Punya Akun? <a href="login">Login</a></p>
+    <p>Sudah Punya Akun? <a href="/">Login</a></p>
 </form>

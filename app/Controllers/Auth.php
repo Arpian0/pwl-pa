@@ -23,7 +23,7 @@ class Auth extends BaseController
                 'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT)
             ]);
 
-            return redirect()->to('/login')->with('success', 'Registration successful! You can now login.');
+            return redirect()->to('/')->with('success', 'Registration successful! You can now login.');
         } else {
             return view('register');
         }
@@ -46,7 +46,7 @@ class Auth extends BaseController
                 $session = session();
                 $session->set('user', $user['id']);
 
-                return redirect()->to('/');
+                return redirect()->to('image');
             } else {
                 return redirect()->back()->with('error', 'Invalid email or password.');
             }
@@ -61,6 +61,6 @@ class Auth extends BaseController
         $session = session();
         $session->remove('user');
 
-        return redirect()->to('/login');
+        return redirect()->to('/');
     }
 }

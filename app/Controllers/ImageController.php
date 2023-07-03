@@ -33,7 +33,7 @@ class ImageController extends BaseController
     public function store()
     {
         if ($this->request->getMethod() !== 'post') {
-            return redirect('index');
+            return redirect('image');
         }
 
         $validationRule = [
