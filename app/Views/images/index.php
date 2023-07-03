@@ -38,7 +38,10 @@
             <?php if (!empty($images) && is_array($images)) { ?>
                 <?php foreach ($images as $row) { ?>
                     <div class="col-md-4">
-                        <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
+                        <div style="text-align: right;">
+                            <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
+                        </div>
+                        <h6>Klik Gambar Untuk Melihat Lebih Lanjut</h6>
                         <div class="card mb-4 shadow">
                             <a href="<?php echo base_url('image/show/' . $row['id']); ?>">
                                 <img src="<?php echo base_url('uploads/' . $row['path']); ?>" class="card-img-top" style="height: 500px; width:100%; object-fit: cover;">
@@ -48,11 +51,8 @@
                                     <?php echo $row['caption']; ?>
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Like</button>
-                                    </div>
                                     <small class="text-muted">
-                                        <?php echo $row['created_at']; ?>
+                                        Tanggal Dan Waktu <div style="color: blue;"><?php echo $row['created_at']; ?></div>
                                     </small>
                                 </div>
                             </div>

@@ -42,8 +42,8 @@ class ImageController extends BaseController
                 'rules' => 'uploaded[image]'
                     . '|is_image[image]'
                     . '|mime_in[image,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
-                    . '|max_size[image,1000]'
-                    . '|max_dims[image,4000,4000]',
+                    . '|max_size[image,10000]'
+                    . '|max_dims[image,40000,40000]',
             ],
         ];
         $validated = $this->validate($validationRule);
@@ -51,11 +51,19 @@ class ImageController extends BaseController
         if ($validated) {
             $caption = $this->request->getPost('caption');
             $image = $this->request->getFile('image');
+            $name = $this->request->getPost('name');
+            $nim = $this->request->getPost('nim');
+            $phone = $this->request->getPost('phone');
+            $location = $this->request->getPost('location');
             $filename = $image->getRandomName();
             $image->move(ROOTPATH . 'public/uploads', $filename);
 
             $uploadedImage = [
                 'caption' => $caption,
+                'name' => $name,
+                'nim' => $nim,
+                'phone' => $phone,
+                'location' => $location,
                 'path' => $image->getName()
             ];
 

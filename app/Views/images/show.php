@@ -1,27 +1,37 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
-<div class="container">
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="col-md-12">
             <div class="card">
+                <div class="card-header">
+                    Detail Gambar
+                    <a href="<?= base_url('image') ?>" class="btn btn-success btn-sm float-right">
+                        Kembali
+                    </a>
+                </div>
                 <div class="card-body">
-                    <h6 class="card-title"><?= $image['caption'] ?></h6>
-                    <img src="<?= base_url('uploads/' . $image['path']) ?>" class="img-fluid mb-3" alt="<?= $image['caption'] ?>">
-                    <p class="card-text">Uploaded on: <?= $image['created_at'] ?></p>
-                    <a href="<?= base_url('image') ?>" class="btn btn-secondary">Back to Gallery</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="<?= base_url('uploads/' . $image['path']) ?>" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Nama Penemu</h4>
+                            <p><?= $image['name'] ?></p>
+                            <h4>NIM Penemu</h4>
+                            <p><?= $image['nim'] ?></p>
+                            <h4>No.Hp Penemu Barang</h4>
+                            <p><?= $image['phone'] ?></p>
+                            <h4>Lokasi Barang di Temukan</h4>
+                            <p><?= $image['location'] ?></p>
+                            <h4>Keterangan</h4>
+                            <p><?= $image['caption'] ?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<?= $this->endSection() ?>
-
-<?= $this->section('extra-css') ?>
-<style>
-    .caption {
-        white-space: pre-line;
-        overflow-wrap: break-word;
-    }
-</style>
 <?= $this->endSection() ?>

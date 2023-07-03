@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ImageModel extends Model
 {
     protected $table = 'images';
-    protected $allowedFields = ['caption', 'path'];
+    protected $allowedFields = ['caption', 'name', 'nim', 'phone', 'location', 'path'];
 
     protected $useTimestamps = true;
     protected $createdField = 'created_at';

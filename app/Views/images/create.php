@@ -29,8 +29,24 @@
 
                     <?= form_open_multipart('image'); ?>
                     <div class="form-group">
-                        <label for="image">Gambar Kamu</label>
+                        <label for="image">Masukkan Gambar Barang</label>
                         <input type="file" name="image" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nim">NIM / NIK</label>
+                        <input type="text" name="nim" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">No.Hp</label>
+                        <input type="text" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Lokasi Barang Yang di Temukan</label>
+                        <input type="text" name="location" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="caption">Keterangan</label>
