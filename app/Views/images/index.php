@@ -13,6 +13,7 @@
             </a>
         </p>
     </div>
+    <form style="text-align: right;" action="logout"><a style="color: red;" href="logout">Keluar</a></form>
 </section>
 
 
@@ -38,10 +39,7 @@
             <?php if (!empty($images) && is_array($images)) { ?>
                 <?php foreach ($images as $row) { ?>
                     <div class="col-md-4">
-                        <div style="text-align: right;">
-                            <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
-                        </div>
-                        <h6>Klik Gambar Untuk Melihat Lebih Lanjut</h6>
+                        <h6 style="text-align: center;">Klik Gambar Untuk Melihat Lebih Lanjut</h6>
                         <div class="card mb-4 shadow">
                             <a href="<?php echo base_url('image/show/' . $row['id']); ?>">
                                 <img src="<?php echo base_url('uploads/' . $row['path']); ?>" class="card-img-top" style="height: 500px; width:100%; object-fit: cover;">
@@ -56,6 +54,9 @@
                                     </small>
                                 </div>
                             </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
                         </div>
                     </div>
                 <?php } ?>

@@ -19,7 +19,7 @@
                         <div class="col-md-6">
                             <h4>Nama Penemu</h4>
                             <p><?= $image['name'] ?></p>
-                            <h4>NIM Penemu</h4>
+                            <h4>NIM / NIK Penemu</h4>
                             <p><?= $image['nim'] ?></p>
                             <h4>No.Hp Penemu Barang</h4>
                             <p><?= $image['phone'] ?></p>

@@ -37,6 +37,12 @@ $routes->group('image', function ($routes) {
 });
 $routes->get('image/delete/(:num)', 'ImageController::delete/$1');
 $routes->get('image/show/(:num)', 'ImageController::show/$1');
+
+$routes->get('register', 'Auth::register');
+$routes->post('register', 'Auth::register');
+$routes->get('login', 'Auth::login');
+$routes->post('login', 'Auth::login');
+$routes->get('logout', 'Auth::logout');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
