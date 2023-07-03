@@ -1,0 +1,292 @@
+ERROR - 2023-07-03 13:02:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\pwl-pa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pwl-pa\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\xampp\htdocs\pwl-pa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\xampp\htdocs\pwl-pa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\pwl-pa\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\pwl-pa\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\pwl-pa\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\pwl-pa\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\pwl-pa\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pwl-pa\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pwl-pa\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pwl-pa\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-07-03 13:13:25 --> Unmatched '}'
+in APPPATH\Controllers\ImageController.php on line 101.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pwl-pa\\app\\Controllers\\ImageController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ImageController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ImageController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ImageController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 13:13:30 --> Unmatched '}'
+in APPPATH\Controllers\ImageController.php on line 101.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pwl-pa\\app\\Controllers\\ImageController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ImageController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ImageController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ImageController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 13:13:31 --> Unmatched '}'
+in APPPATH\Controllers\ImageController.php on line 101.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pwl-pa\\app\\Controllers\\ImageController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ImageController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ImageController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ImageController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 13:13:45 --> Unmatched '}'
+in APPPATH\Controllers\ImageController.php on line 101.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pwl-pa\\app\\Controllers\\ImageController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ImageController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ImageController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ImageController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 13:16:11 --> Undefined variable $image
+in APPPATH\Views\images\index.php on line 46.
+ 1 APPPATH\Views\images\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('images/index', [], true)
+ 5 APPPATH\Controllers\ImageController.php(23): view('images/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 13:16:14 --> Undefined variable $image
+in APPPATH\Views\images\index.php on line 46.
+ 1 APPPATH\Views\images\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('images/index', [], true)
+ 5 APPPATH\Controllers\ImageController.php(23): view('images/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 14:40:16 --> Undefined array key "like_count"
+in APPPATH\Views\images\index.php on line 44.
+ 1 APPPATH\Views\images\index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "like_count"', 'C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('images/index', [], true)
+ 5 APPPATH\Controllers\ImageController.php(23): view('images/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 14:40:17 --> Undefined array key "like_count"
+in APPPATH\Views\images\index.php on line 44.
+ 1 APPPATH\Views\images\index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "like_count"', 'C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pwl-pa\\app\\Views\\images\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('images/index', [], true)
+ 5 APPPATH\Controllers\ImageController.php(23): view('images/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:19:00 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:19:05 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('13')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:19:08 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('15')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:19:12 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('18')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:21:26 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:21:54 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:21:54 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:21:54 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:03 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:04 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:04 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:44 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:44 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:44 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:22:44 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:23:18 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:23:21 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:23:58 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('19')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
+CRITICAL - 2023-07-03 15:25:54 --> Invalid file: "image/show.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('image/show.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('image/show', [], true)
+ 3 APPPATH\Controllers\ImageController.php(111): view('image/show', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ImageController->show('19')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ImageController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\pwl-pa\\public\\index.php')
