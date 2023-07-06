@@ -17,7 +17,7 @@ class ImageController extends BaseController
         $data = [
             'images' => $this->model->paginate(6),
             'pager' => $this->model->pager,
-            'title' => 'Image Gallery'
+            'title' => 'Gallery Amikom'
         ];
 
         return view('images/index', $data);

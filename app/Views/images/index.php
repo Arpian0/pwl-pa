@@ -13,7 +13,9 @@
             </a>
         </p>
     </div>
-    <form style="text-align: right;" action="logout"><a style="color: red;" href="logout">Keluar</a></form>
+    <div style="text-align: right;">
+        <form class="btn btn-danger" action="logout"><a style="color: white;" href="logout">Keluar</a></form>
+    </div>
 </section>
 
 
@@ -54,9 +56,9 @@
                                     </small>
                                 </div>
                             </div>
-                        </div>
-                        <div style="text-align: right;">
-                            <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
+                            <div style="text-align: center;">
+                                <a class="btn btn-warning" href="<?php echo base_url('image/delete/' . $row['id']); ?>" onclick="return confirm('Are you sure you want to delete this image?')">Hapus</a>
+                            </div>
                         </div>
                     </div>
                 <?php } ?>

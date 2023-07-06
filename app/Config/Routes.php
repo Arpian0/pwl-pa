@@ -43,6 +43,9 @@ $routes->post('register', 'Auth::register');
 $routes->get('/', 'Auth::login');
 $routes->post('login', 'Auth::login');
 $routes->get('logout', 'Auth::logout');
+
+$routes->post('/hubungi-via-whatsapp', 'ImageController::sendWhatsApp');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
