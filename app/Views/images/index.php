@@ -14,7 +14,7 @@
         </p>
     </div>
     <div style="text-align: right;">
-        <form class="btn btn-danger" action="logout"><a style="color: white;" href="logout">Keluar</a></form>
+        <form class="btn btn-danger" action="logout"><a style="color: white;" href="logout" onclick="return confirm('Apakah kah kamu yakin mau keluar dari pengguna ini?')">Keluar</a></form>
     </div>
 </section>
 
